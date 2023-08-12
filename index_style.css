@@ -1,24 +1,103 @@
-h1,
-h2,
-h3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-}
-button {
-  color: aliceblue;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  background-color: hsl(322, 100%, 66%);
-  border: none;
-}
-body {
-  height: 100vh;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-}
+@media screen and (max-width: 375px) {
+  h1,
+  h2,
+  h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: hsl(192, 100%, 9%);
+  }
 
-#button-header {
-  color: black;
-  background-color: aliceblue;
+  p {
+    font-size: 0.9em;
+    color: hsl(192, 100%, 9%);
+    font-weight: 400;
+  }
+
+  button {
+    color: aliceblue;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+  }
+
+  img {
+    width: 290px;
+  }
+
+  body {
+    margin: 0;
+    height: 100vh;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: hsla(193, 100%, 96%, 1);
+  }
+
+  #logo-header {
+    width: 110px;
+    height: 15px;
+  }
+
+  #button-header {
+    color: black;
+    background-color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brand-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+    background-color: hsla(193, 100%, 96%, 0.9);
+    background-image: url(images/bg-hero-mobile.svg);
+    background-size: contain;
+  }
+
+  .brand-intro p {
+    width: 95%;
+  }
+
+  .brand-intro button {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    padding: 10px 60px;
+    border: none;
+    border-radius: 20px;
+  }
+
+  .grow,
+  .conversations,
+  .users {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  #logo-footer {
+    filter: brightness(0) invert(1);
+  }
 }
