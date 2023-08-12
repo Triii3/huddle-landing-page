@@ -38,7 +38,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 20px 10px;
   background-color: hsla(193, 100%, 96%, 1);
 }
 
@@ -53,7 +53,7 @@ header {
   padding: 5px 20px;
   border: none;
   border-radius: 30px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 main {
