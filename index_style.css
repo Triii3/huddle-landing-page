@@ -10,20 +10,36 @@ h3 {
 
 p {
   font-size: 0.9em;
-  color: hsl(192, 100%, 9%);
   font-weight: 400;
 }
 
 button {
-  color: aliceblue;
+  color: white;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   background-color: hsl(322, 100%, 66%);
   border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 img {
   width: 90%;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
 }
 
 body {
@@ -40,12 +56,11 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 15px;
-  background-color: hsla(193, 100%, 96%, 1);
+  background-color: hsl(193, 100%, 96%);
 }
 
 #logo-header {
-  width: 110px;
-  height: 15px;
+  width: 30%;
 }
 
 #button-header {
@@ -54,12 +69,12 @@ header {
   padding: 5px 20px;
   border: none;
   border-radius: 30px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -78,6 +93,7 @@ h1 {
 }
 .brand-intro p {
   width: 90%;
+  color: hsl(192, 100%, 9%);
 }
 
 .brand-intro button {
@@ -92,29 +108,100 @@ h1 {
 .conversations,
 .users {
   height: 400px;
+  /* just so every feature section are continuous in height
+  */
   width: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
   align-items: center;
   margin-top: 50px;
-  padding: 50px 20px 10px;
+  padding: 50px 10px 10px;
   border-radius: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   font-size: 0.8em;
 }
 
-.section-descs {
+.features-descs {
   width: 80%;
-  font-weight: 400;
-  opacity: 0.5;
+  color: hsl(208, 11%, 55%);
 }
 
-.section-imgs {
+.features-imgs {
   width: 80%;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+}
+
+.subscribe {
+  width: 80%;
+  position: relative;
+  top: 60px;
+  /* by using the 'position: relative;' and 'top' attribute
+      we are able to position the subscribe section to 
+      have that half background-color effect without
+      disturbing the flow elements too much*/
+  padding: 30px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.subscribe h3 {
+  font-size: 0.9em;
+}
+
+.subscribe button {
+  margin-top: 20px;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 20px;
+}
+
+footer {
+  padding: 120px 20px 50px;
+  text-align: start;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: hsl(192, 100%, 9%);
 }
 
 #logo-footer {
+  width: 50%;
   filter: brightness(0) invert(1);
+}
+
+.footer-icons {
+  width: 5%;
+  height: 5%;
+}
+
+#location-icon {
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
+.location,
+.number,
+.email {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+nav {
+  margin-top: 40px;
+}
+
+.soc-links {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.soc-links img {
+  width: 30px;
+  filter: brightness(0) invert(1);
+}
+
+#copyright {
+  text-align: center;
+  font-size: 0.7em;
 }

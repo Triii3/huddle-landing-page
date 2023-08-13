@@ -39,22 +39,22 @@
         </p>
         <button>Get Started For Free</button>
         <img
-          class="section-imgs"
           src="images/illustration-mockups.svg"
           id="illus-mockups"
           alt="illustration mockups"
         />
       </section>
+      <!-- app features section-->
       <section class="grow">
         <img
-          class="section-imgs"
+          class="features-imgs"
           src="images/illustration-grow-together.svg"
           id="illus-grow-together"
           alt="Two individuals having a conversation"
         />
 
         <h2>Grow Together</h2>
-        <p class="section-descs">
+        <p class="features-descs">
           Generate meaningful discussions with your audience and build a strong,
           loyal community. Think of the insightful conversations you miss out on
           with a feedback form.
@@ -62,31 +62,32 @@
       </section>
       <section class="conversations">
         <img
-          class="section-imgs"
+          class="features-imgs"
           src="images/illustration-flowing-conversation.svg"
           id="illus-conversations"
           alt="A group having a discussion"
         />
         <h2>Flowing Conversations</h2>
-        <p class="section-descs">
+        <p class="features-descs">
           You wouldn't paginate a conversation in real life, so why do it
           online? Our threads have just-in-time loading for a more natural flow.
         </p>
       </section>
       <section class="users">
         <img
-          class="section-imgs"
+          class="features-imgs"
           src="images/illustration-your-users.svg"
           id="illus-users"
           alt="Individuals setting up the discussion feature"
         />
         <h2>Your Users</h2>
-        <p class="section-descs">
+        <p class="features-descs">
           It takes no time at all to integrate Huddle with your app's
           authentication solution. This means, once signed in to your app, your
           users can start chatting immediately.
         </p>
       </section>
+      <!-- end of features section -->
       <section class="subscribe">
         <h3>Ready To Build Your Community?</h3>
         <button type="button">Get Started For Free</button>
@@ -95,26 +96,38 @@
     <footer>
       <img src="images/logo.svg" id="logo-footer" />
       <section class="location">
+        <img
+          src="images/icon-location.svg"
+          class="footer-icons"
+          id="location-icon"
+        />
+
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua
         </p>
       </section>
-      <section class="mobile-number"><p>+1-543-123-4567</p></section>
-      <section class="email"><p>example@fylo.com</p></section>
+      <section class="number">
+        <img src="images/icon-phone.svg" class="footer-icons" />
+        <p>+1-543-123-4567</p>
+      </section>
+      <section class="email">
+        <img src="images/icon-email.svg" class="footer-icons" />
+        <p>example@fylo.com</p>
+      </section>
       <nav>
         <ul>
           <li>
-            <a>About Us</a>
+            <a href="#">About Us</a>
           </li>
-          <li><a>What We Do</a></li>
-          <li><a>FAQ </a></li>
-          <li><a>Career </a></li>
-          <li><a>Blog </a></li>
-          <li><a>Contact Us</a></li>
+          <li><a href="#">What We Do</a></li>
+          <li><a href="#">FAQ </a></li>
+          <li><a href="#">Career </a></li>
+          <li><a href="#">Blog </a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
       </nav>
-      <nav>
+      <nav class="soc-links">
         <a href="#">
           <img
             src="images/facebook.svg"
@@ -132,7 +145,7 @@
             alt="instagram-icon"
         /></a>
       </nav>
-      <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
+      <p id="copyright">&copy; Copyright 2018 Huddle. All rights reserved.</p>
     </footer>
   </body>
 </html>
