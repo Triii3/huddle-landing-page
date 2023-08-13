@@ -1,6 +1,5 @@
 h1,
-h2,
-h3 {
+h2 {
   margin-bottom: 0;
   font-family: "Poppins", sans-serif;
   font-size: 1.4em;
@@ -34,6 +33,7 @@ a {
 ul {
   display: flex;
   flex-direction: column;
+  margin-top: 0;
   row-gap: 20px;
   padding-left: 0;
 }
@@ -88,6 +88,13 @@ main {
   background-image: url(images/bg-hero-mobile.svg);
   background-size: contain;
 }
+
+.intro-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
   width: 80%;
 }
@@ -107,18 +114,23 @@ h1 {
 .grow,
 .conversations,
 .users {
-  height: 400px;
-  /* just so every feature section are continuous in height
-  */
   width: 80%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   margin-top: 50px;
   padding: 50px 10px 10px;
   border-radius: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   font-size: 0.8em;
+}
+
+.features-textLeft,
+.features-textRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .features-descs {
@@ -133,11 +145,14 @@ h1 {
 
 .subscribe {
   width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   top: 60px;
   /* by using the 'position: relative;' and 'top' attribute
       we are able to position the subscribe section to 
-      have that half background-color effect without
+      have that half background-color effect from footer without
       disturbing the flow elements too much*/
   padding: 30px;
   border-radius: 20px;
@@ -146,10 +161,12 @@ h1 {
 }
 
 .subscribe h3 {
-  font-size: 0.9em;
+  font-size: 1em;
+  color: hsl(192, 100%, 9%);
 }
 
 .subscribe button {
+  width: 80%;
   margin-top: 20px;
   padding: 10px 40px;
   border: none;
@@ -173,6 +190,10 @@ footer {
   height: 5%;
 }
 
+.location-contacts {
+  margin-bottom: 20px;
+}
+
 #location-icon {
   margin-top: 20px;
   align-self: flex-start;
@@ -184,10 +205,6 @@ footer {
   display: flex;
   align-items: center;
   column-gap: 20px;
-}
-
-nav {
-  margin-top: 40px;
 }
 
 .soc-links {
@@ -204,4 +221,123 @@ nav {
 #copyright {
   text-align: center;
   font-size: 0.7em;
+}
+
+@media screen and (min-width: 1280px) {
+  h1,
+  h2 {
+    font-size: 1.7em;
+  }
+
+  img {
+    width: 55%;
+  }
+
+  body {
+    text-align: start;
+    overflow-x: hidden;
+  }
+
+  header {
+    padding: 60px;
+  }
+
+  #logo-header {
+    width: 12%;
+  }
+
+  #button-header {
+    padding: 10px 60px;
+  }
+
+  .brand-intro {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 60px;
+    background-image: url(images/bg-hero-desktop.svg);
+  }
+
+  .intro-texts {
+    width: 40%;
+    align-items: flex-start;
+  }
+
+  .brand-intro button {
+    padding: 15px 70px;
+    border-radius: 30px;
+  }
+  .grow,
+  .conversations,
+  .users {
+    width: 85%;
+    flex-direction: row;
+  }
+
+  .features-textLeft,
+  .features-textRight {
+    width: 50%;
+    align-items: flex-start;
+  }
+
+  .grow img,
+  .users img {
+    order: 2;
+  }
+
+  .features-textLeft {
+    order: 1;
+  }
+  .features-imgs {
+    width: 30%;
+  }
+
+  .subscribe {
+    width: 50%;
+  }
+
+  .subscribe h3 {
+    font-size: 1.3em;
+    margin-bottom: 0;
+  }
+
+  .subscribe button {
+    width: 40%;
+    padding: 20px 40px;
+    border-radius: 30px;
+  }
+
+  footer {
+    padding: 120px 100px 50px;
+  }
+
+  #logo-footer {
+    width: 20%;
+    margin: 20px 0;
+  }
+
+  .info-nav-links {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .location-contacts {
+    width: 33%;
+  }
+
+  .location-contacts p {
+    margin-top: 0;
+  }
+
+  #location-icon {
+    margin-top: 10px;
+  }
+
+  .soc-links {
+    justify-content: flex-start;
+  }
+
+  #copyright {
+    text-align: end;
+  }
 }
