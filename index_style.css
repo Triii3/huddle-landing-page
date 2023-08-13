@@ -1,6 +1,7 @@
 h1,
 h2,
 h3 {
+  margin-bottom: 0;
   font-family: "Poppins", sans-serif;
   font-size: 1.4em;
   font-weight: 600;
@@ -22,7 +23,7 @@ button {
 }
 
 img {
-  width: 290px;
+  width: 90%;
 }
 
 body {
@@ -38,7 +39,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10px;
+  padding: 20px 15px;
   background-color: hsla(193, 100%, 96%, 1);
 }
 
@@ -72,9 +73,11 @@ main {
   background-image: url(images/bg-hero-mobile.svg);
   background-size: contain;
 }
-
+h1 {
+  width: 80%;
+}
 .brand-intro p {
-  width: 95%;
+  width: 90%;
 }
 
 .brand-intro button {
@@ -88,14 +91,30 @@ main {
 .grow,
 .conversations,
 .users {
-  width: 90%;
+  height: 400px;
+  width: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: stretch;
+  align-items: center;
   margin-top: 50px;
+  padding: 50px 20px 10px;
   border-radius: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-size: 0.8em;
 }
+
+.section-descs {
+  width: 80%;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.section-imgs {
+  width: 80%;
+  margin-bottom: 40px;
+}
+
 #logo-footer {
   filter: brightness(0) invert(1);
 }
