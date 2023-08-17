@@ -127,7 +127,7 @@ h1 {
 }
 
 .features-img-container {
-  width: 45%;
+  width: 80%;
   display: flex;
   justify-content: center;
 }
@@ -287,6 +287,10 @@ footer {
     align-items: flex-start;
   }
 
+  .features-img-container {
+    width: 45%;
+  }
+
   .grow .features-img-container,
   .users .features-img-container {
     order: 2;
@@ -354,9 +358,5 @@ footer {
   }
   .soc-links {
     justify-content: flex-start;
-  }
-
-  #copyright {
-    text-align: end;
   }
 }
