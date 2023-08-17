@@ -19,6 +19,12 @@ button {
   background-color: hsl(322, 100%, 66%);
   border: none;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
 }
 
 img {
@@ -28,6 +34,10 @@ img {
 a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 ul {
@@ -120,7 +130,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   margin-top: 50px;
-  padding: 50px 10px 10px;
+  padding: 50px 10px 20px;
   border-radius: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   font-size: 0.8em;
@@ -213,6 +223,10 @@ footer {
   column-gap: 20px;
 }
 
+.soc-and-copyright {
+  margin-top: 60px;
+}
+
 .soc-links {
   display: flex;
   justify-content: center;
@@ -222,6 +236,11 @@ footer {
 .soc-links img {
   width: 30px;
   filter: brightness(0) invert(1);
+}
+
+.soc-links img:hover {
+  filter: invert(47%) sepia(24%) saturate(2989%) hue-rotate(292deg)
+    brightness(102%) contrast(101%);
 }
 
 #copyright {
@@ -259,7 +278,8 @@ footer {
   .brand-intro {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0px 60px;
+    margin-bottom: 50px;
+    padding: 0px 60px 40px;
     background-image: url(images/bg-hero-desktop.svg);
   }
 
@@ -351,6 +371,7 @@ footer {
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
+    margin-top: 0;
   }
   html,
   body {
